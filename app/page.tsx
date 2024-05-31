@@ -6,7 +6,7 @@ import { BiLoader } from 'react-icons/bi';
 import UserCard from './user-card';
 import ActionButtons from './action-buttons';
 
-export const Home = () => {
+export default function Home() {
   const [users, setUsers] = useState<UserData[]>([]);
   const [pagination, setPagination] = useState<Pagination>({
     page: 1,
@@ -49,6 +49,4 @@ export const Home = () => {
       />
     </main>
   );
-};
-
-export default Home;
+}
